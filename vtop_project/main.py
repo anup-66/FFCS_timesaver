@@ -46,4 +46,6 @@ plt.show()
 from read_xl import read
 
 mod = read()
-print(mod.returnDict())
+print(len(mod.returnDict().keys()))
+# for i in range():
+#     for j in range(len())
