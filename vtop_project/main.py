@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Create a 2D numpy array to represent the grid
-grid = np.zeros((10, 5))
+grid = np.zeros((11, 12))
 
 # Fill some cells with data
 grid[1, 2] = 1
@@ -12,7 +12,7 @@ grid[1, 2] = 1
 
 
 # Set the cell width and height
-cell_width = .5
+cell_width = 2
 cell_height = 2
 
 # Create a figure and axis object
@@ -43,3 +43,7 @@ ax.set_ylim([0, 11*cell_height])
 
 # Show the plot
 plt.show()
+from read_xl import read
+
+mod = read()
+print(mod.returnDict())
